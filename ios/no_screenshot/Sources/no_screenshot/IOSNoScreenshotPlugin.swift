@@ -4,7 +4,7 @@ import UIKit
 #if SWIFT_PACKAGE
 @objc(NoScreenshotPlugin)
 #endif
-public class IOSNoScreenshotPlugin: NSObject, FlutterPlugin, FlutterStreamHandler, FlutterSceneLifeCycleDelegate {
+public class IOSNoScreenshotPlugin: NSObject, FlutterPlugin, FlutterStreamHandler {
     private var screenPrevent = UITextField()
     private var screenImage: UIImageView? = nil
     private weak var attachedWindow: UIWindow? = nil
